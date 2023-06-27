@@ -1,0 +1,22 @@
+[name]
+model_name=torso
+
+[train-configure]
+epochs=15
+steps=150,250
+batch_size=128
+subdivisions=1
+learning_rate=0.001
+
+[model-configure]
+pre_weights=
+classes=8
+width=352
+height=352
+anchor_num=3
+anchors=16.61,166.95, 16.67,18.63, 24.28,52.53, 52.56,99.98, 89.93,220.17, 191.51,308.94
+
+[data-configure]
+train=./train.txt
+val=./val.txt
+names=/data/torso.names
